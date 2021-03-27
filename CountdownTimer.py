@@ -8,7 +8,7 @@ root = Tk()
 
 root.geometry("300x250")
 root.iconbitmap("icon.ico")
-root.title("Pomodoro Timer")
+root.title("Tkinter Timer")
 
 hour = StringVar()
 minute = StringVar()
@@ -52,7 +52,7 @@ def submit():
             time.sleep(1)
 
             if (temp == 0):
-                messagebox.showinfo("Break time", "Take a break")
+                messagebox.showinfo("Break", "Time's up, take a break.")
              
             temp -= 1
 
